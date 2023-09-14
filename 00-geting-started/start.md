@@ -21,6 +21,9 @@ In this tutorial, I would recommend learning the basics of HTML, CSS, and JS.
 [Tech](#Tech)
 
 ## tech
+REACT
+* Create react app
+* Reactjs code snippets
 
 ## React
 React was created by Facebook to seamlessly render components to your page. Make sure you have installed node and the extension before moving on to this lesson.

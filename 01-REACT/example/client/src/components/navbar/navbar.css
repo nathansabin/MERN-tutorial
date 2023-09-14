@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+}
+
+ol {
+    width: auto;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    width: auto;
+    padding: 3px;
+    margin-left: 6px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+}
