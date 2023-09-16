@@ -14,13 +14,13 @@ const Navbar = ({onDataReceived}) => {
         <div>
             <ol>
                 <li id="useEffect" onClick={navClick}
-                style={{ color: page === "useEffect" ?  "#DEC1FF" : "#93867F" }}
+                style={{ color: page === "useEffect" ?  "white" : "black" }}
                 >use effect</li>
                 <li id="useState" onClick={navClick}
-                style={{ color: page === "useState" ?  "#DEC1FF" : "#93867F" }}
+                style={{ color: page === "useState" ?  "white" : "black" }}
                 >use state</li>
                 <li id="useContext" onClick={navClick}
-                style={{ color: page === "useContext" ?  "#DEC1FF" : "#93867F" }}
+                style={{ color: page === "useContext" ?  "white" : "black" }}
                 >use context</li>
             </ol>
         </div>

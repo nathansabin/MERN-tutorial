@@ -4,22 +4,18 @@
 
 ol {
     width: auto;
-    padding: 8px;
-    margin: 0;
-    background-color: #343633;
+    background-color: grey;
     display: flex;
     justify-content: center;
-    gap: 10px;
 }
 
 li {
     width: auto;
-    padding: 6px;
-    background-color: #7D70BA;
+    padding: 3px;
+    margin-left: 6px;
+    background-color: lightgrey;
     border-radius: 5px;
     flex-direction: row;
     list-style-type: none;
     justify-content: center;
-    font-weight: 300;
-    box-shadow: inset 0 0 10px #000000;
 }
