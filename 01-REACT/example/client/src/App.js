@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import Header from "./components/header/header"
-import Footer from "./components/footer/footer"
-import Navbar from "./components/navbar/navbar";
+import Header from "./components/header/"
+import Footer from "./components/footer/"
+import Navbar from "./components/navbar/";
 import './App.css';
 
 function App({ onDataReceived }) {
