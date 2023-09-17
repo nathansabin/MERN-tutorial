@@ -1,33 +1,31 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
+import State from '../pages/state';
+import Effect from '../pages/effect';
+import Ucontext from '../pages/context';
 
+const Selector = ({ selection }) => {
+  const [page, setPage] = useState(selection);
 
-const Selector = ({selection}) => {
-    const [page, setPage] = useState(selection);
-   
-    const returnPage = () => {
-        switch(page) {
-            case "useEffect":
-                console.log("switch");
-                break;
-                //return(<></>);
-            case "useState":
-                console.log("switch");
-                break;
-                // return(<></>);
-            case "useContext":
-                console.log("switch");
-                break;
-                //return(<></>);
-        }
+  useEffect(() => {
+    setPage(selection);
+  }, [selection]);
+
+  const returnPage = () => {
+    switch (page) {
+      case "useEffect":
+        return <Effect />;
+      case "useState":
+        return <State />;
+      case "useContext":
+        return <Ucontext />;
     }
+  }
 
-
-    return (
-        <>
-           {returnPage()}
-        </>
-    );
+  return (
+    <>
+      {returnPage()} 
+    </>
+  );
 };
-
 
 export default Selector;

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Header from "./components/header/"
 import Footer from "./components/footer/"
 import Navbar from "./components/navbar/";
@@ -10,9 +10,10 @@ function App({ onDataReceived }) {
 
   const handleNav = (data) => {
     setPage(data)
-    console.log(page)
   };
-
+  useEffect(() => {
+    handleNav(onDataReceived)
+  }, [onDataReceived])
   return (
     <div className="wrapper">
       <Header/>

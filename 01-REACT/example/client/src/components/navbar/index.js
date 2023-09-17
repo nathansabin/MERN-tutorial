@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useState, useEffect} from 'react';
 import "./navbar.css";
 
 const Navbar = ({onDataReceived}) => {
@@ -6,8 +6,8 @@ const Navbar = ({onDataReceived}) => {
 
     const navClick = (event) => {
         const newPage = event.target.id;
-        setPage(newPage);
-        onDataReceived(page);
+        onDataReceived(newPage);
+        setPage(newPage); 
     }; 
 
     return (
