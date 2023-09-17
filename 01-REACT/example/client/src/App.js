@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Header from "./components/header/"
 import Footer from "./components/footer/"
 import Navbar from "./components/navbar/";
+import Selector from "./utils/selector";
 import './App.css';
 
 function App({ onDataReceived }) {
@@ -16,7 +17,7 @@ function App({ onDataReceived }) {
     <div className="wrapper">
       <Header/>
       <Navbar onDataReceived={handleNav}/>
-
+      <Selector selection={page}/>
       <Footer/>
     </div>
   );
