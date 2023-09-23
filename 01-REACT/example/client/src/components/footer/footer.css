@@ -8,4 +8,9 @@
 
 .image_box img {
     margin-top: 3px;
+    background-color: #93867F;
+}
+
+.image_box h4 {
+    background-color: #93867F;
 }

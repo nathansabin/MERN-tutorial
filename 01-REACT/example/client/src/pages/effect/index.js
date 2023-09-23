@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import './useEffect.css';
 import axios from 'axios';
 
 function Effect(props) {
@@ -19,10 +20,12 @@ function Effect(props) {
     }, []); 
 
     return (
-        <div>
-            <h2>Use Effect</h2>
-            <p></p>
-            <h3>{joke}</h3>
+        <div className={'effect-page'}>
+            <div className={'container'}>
+                <h2>Use Effect</h2>
+                <p></p>
+                <h3>{joke}</h3>
+            </div>
         </div>
     );
 }
