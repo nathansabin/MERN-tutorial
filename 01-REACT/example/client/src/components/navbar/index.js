@@ -10,6 +10,10 @@ const Navbar = ({onDataReceived}) => {
         setPage(newPage); 
     }; 
 
+    useEffect(() => {
+        onDataReceived(page);
+    });
+
     return (
         <div>
             <ol>
