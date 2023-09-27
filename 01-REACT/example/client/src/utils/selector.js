@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import State from '../pages/state';
 import Effect from '../pages/effect';
-import Ucontext from '../pages/context';
+import Ucontext from '../pages/ucontext';
 
 const Selector = ({ selection }) => {
   const [page, setPage] = useState(selection);
