@@ -1,0 +1,11 @@
+.font-button {
+    height: auto;
+    margin: 0 auto;
+    width: 85px;
+    padding: 8px;
+    border-radius: 15px;
+    border: 0;
+    margin-top: 10px;
+    color: white;
+    background-color:#7D70BA;
+}

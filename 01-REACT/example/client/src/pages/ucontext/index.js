@@ -1,5 +1,6 @@
 import React, { useContext, useEffect}from 'react';
 import { colorContext } from '../../App';
+import "./useContext.css";
 
 function Ucontext(props) {
     const [color, setColor] = useContext(colorContext);
@@ -13,7 +14,7 @@ function Ucontext(props) {
             <div className={'container'}>
                 <h2>Use Context</h2>
                 <p></p>
-                <button onClick={changeColor}>Font Color</button>
+                <button className={'font-button'} onClick={changeColor}>Font Color</button>
             </div>
         </div>
     );

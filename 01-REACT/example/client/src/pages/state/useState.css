@@ -1,39 +1,3 @@
-* {
-    background-color: transparent;
-}
-
-.effect-page {
-    margin-top: 5px;
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-
-.container {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    height: 100%;
-    background-color: #DEC1FF;
-    padding: 3%;
-}
-
-.container * {
-    color: grey;
-}
-
-.container h2 {
-    width: 25%;
-    height: auto;
-    padding: 3%;
-    background-color: #343633;
-    color: #7D70BA;
-    font-weight: 400;
-    margin: 0 auto;
-    border-radius: 12px;
-}
-
 .buttons {
     margin-top: 5px;
     width: 100%;
