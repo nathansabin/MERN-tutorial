@@ -27,7 +27,9 @@
     width: 25%;
     height: auto;
     padding: 3%;
-    background-color: red;
+    background-color: #343633;
+    color: #7D70BA;
+    font-weight: 400;
     margin: 0 auto;
     border-radius: 12px;
 }
