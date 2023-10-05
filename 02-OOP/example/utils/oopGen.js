@@ -11,13 +11,11 @@ class oopOop {
             console.error(err);
           }
     } 
-
     touchOop(data) {
       fs.writeFile('./oop/index.js', data, (err) => {
         if (err) console.log(err);
       });
     }
-
     async grabCode() {
       try {
         const content = await fs.readFileSync('./oopText.txt', 'utf8');
@@ -28,14 +26,6 @@ class oopOop {
     }
 }
 
-const testFile = async () => {
-  const Oop = new oopOop();
+const Oop = new oopOop();
 
-  await Oop.mkdir();
-  const text = await Oop.grabCode();
-  await Oop.touchOop(text);
-};
-
-testFile();
-
-// module.exports = Oop;
+module.exports = Oop;
