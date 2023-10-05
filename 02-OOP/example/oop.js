@@ -1,1 +1,0 @@
-var word = "hello World!":

@@ -1,1 +1,0 @@
-const Oop = require("./oopGen");

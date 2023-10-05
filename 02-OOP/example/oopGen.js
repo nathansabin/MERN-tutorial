@@ -12,32 +12,28 @@ class oopOop {
           }
     } 
 
-    touchOop(file, data) {
-      fs.appendFile(file, data, (err) => {
-        if (err) {
-          return err;
-        }
+    touchOop(data) {
+      fs.writeFile('./oop/index.js', data, (err) => {
+        if (err) console.log(err);
       });
     }
 
-    grabCode() {
-      fs.readFile('./oopText.txt', (err, data) => {
-        if (err) {
-          return err;
-        } 
-        return data;
-      });
+    async grabCode() {
+      try {
+        const content = await fs.readFileSync('./oopText.txt', 'utf8');
+        return content;
+      } catch (err) {
+        throw err;
+      }
     }
 }
-
-// Oop = new oopOop();
 
 const testFile = async () => {
   const Oop = new oopOop();
 
   await Oop.mkdir();
-  // const text = Oop.grabCode();
-  Oop.touchOop("example.js", "var word = \"hello World!\":");
+  const text = await Oop.grabCode();
+  await Oop.touchOop(text);
 };
 
 testFile();
