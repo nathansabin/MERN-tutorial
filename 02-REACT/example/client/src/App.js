@@ -1,7 +1,7 @@
 import React, {useState, useEffect, createContext} from "react";
-import Header from "./components/header/"
-import Footer from "./components/footer/"
-import Navbar from "./components/navbar/";
+import Header from "./components/header"
+import Footer from "./components/footer"
+import Navbar from "./components/navbar";
 import Selector from "./utils/selector";
 import './App.css';
 

@@ -4,13 +4,19 @@ const Oop = require("./utils/oopGen");
 const main = () => {
     inquirer.prompt([
         {
-            name: "selection",
+            name: "fileName",
+            message: "Enter your file name",
+            type: "input",
+        },
+        {
+            name: "code",
             message: "enter node JS code",
             type: "input",
         }
     ])
     .then((res) => {
-        console.log(res.selection);
+        Oop.mkdir();
+        Oop.touchOop(res.fileName, res.code);
     })
     .catch(err => console.log(err));
 };

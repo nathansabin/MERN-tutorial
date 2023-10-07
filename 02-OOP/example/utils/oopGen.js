@@ -11,8 +11,8 @@ class oopOop {
             console.error(err);
           }
     } 
-    touchOop(data) {
-      fs.writeFile('./oop/index.js', data, (err) => {
+    touchOop(name, data) {
+      fs.writeFile(`./oop/${name}.js`, data, (err) => {
         if (err) console.log(err);
       });
     }
