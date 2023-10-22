@@ -12,7 +12,7 @@ class oopOop {
           }
     } 
     touchOop(name, data) {
-      fs.writeFile(`./oop/${name}.js`, data, (err) => {
+      fs.writeFile(`./output/${name}.js`, data, (err) => {
         if (err) console.log(err);
       });
     }
