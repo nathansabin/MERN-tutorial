@@ -1,4 +1,5 @@
 import './App.css';
+import { useState, createContext } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './header';
 import Footer from './footer';
@@ -10,9 +11,13 @@ import {
   History
 } from "../pages";
 
+export const page = createContext();
+
 function App() {
+  const [page, setPage] = useState("login");
   return (
     <div className="App">
+      <page.provider value={[page, setPage]}>
       <Header />
         <Router>
           <Routes>
@@ -39,6 +44,7 @@ function App() {
           </Routes>
         </Router>
       <Footer />
+      </page.provider>
     </div>
   );
 }
