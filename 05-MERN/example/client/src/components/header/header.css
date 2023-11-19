@@ -1,0 +1,17 @@
+.header div{
+    background-color: #333333;
+    /* margin-top: 500px; */
+}
+
+.button button {
+    border: 1px solid white; 
+}
+
+.button ul {
+    background-color: #666666;
+}
+
+.button ul li {
+    color: white;
+    text-decoration: underline #111111;
+}

@@ -11,13 +11,10 @@ import {
   History
 } from "../pages";
 
-export const page = createContext();
 
 function App() {
-  const [page, setPage] = useState("login");
   return (
     <div className="App">
-      <page.provider value={[page, setPage]}>
       <Header />
         <Router>
           <Routes>
@@ -44,7 +41,6 @@ function App() {
           </Routes>
         </Router>
       <Footer />
-      </page.provider>
     </div>
   );
 }
