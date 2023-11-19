@@ -1,0 +1,12 @@
+.login {
+    margin: auto;
+    background-color: #333333;
+    border: 1px solid #bbbbbb;
+    padding: 45px;
+    width: 75%;
+}
+
+.button {
+    background-color: #666666;
+    border: 1px solid white;
+}

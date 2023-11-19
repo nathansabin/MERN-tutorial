@@ -4,7 +4,7 @@
 }
 
 .button button {
-    border: 1px solid white; 
+    border: 1px solid #bbbbbb; 
 }
 
 .button ul {
@@ -13,5 +13,5 @@
 
 .button ul li {
     color: white;
-    text-decoration: underline #111111;
+    text-decoration: underline #aaaaaa;
 }
